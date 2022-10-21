@@ -1,5 +1,6 @@
 server:
   port: 8004
+
 spring:
   application:
     # 服务名称
