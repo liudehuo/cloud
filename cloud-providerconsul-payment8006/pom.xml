@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order80</artifactId>
+    <artifactId>cloud-providerconsul-payment8006</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,6 +18,7 @@
     </properties>
 
     <dependencies>
+        <!--项目内通用模块-->
         <dependency>
             <groupId>com.ldh.spring.cloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
@@ -27,10 +28,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--eureka client-->
+        <!--Spring Cloud Consul Server-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
+        <!--监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--热部署-->
         <dependency>
@@ -39,6 +45,7 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

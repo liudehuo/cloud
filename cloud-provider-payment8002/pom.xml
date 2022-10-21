@@ -20,11 +20,6 @@
     <dependencies>
         <dependency>
             <groupId>com.ldh.spring.cloud</groupId>
-            <artifactId>cloud</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.ldh.spring.cloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -32,11 +27,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--包含了sleuth+zipkin-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.cloud</groupId>-->
-        <!--            <artifactId>spring-cloud-starter-zipkin</artifactId>-->
-        <!--        </dependency>-->
         <!--eureka client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
