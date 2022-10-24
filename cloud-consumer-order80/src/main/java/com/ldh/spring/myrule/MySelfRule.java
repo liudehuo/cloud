@@ -10,7 +10,7 @@ public class MySelfRule {
 
     @Bean
     public IRule myRule() {
-        // 负载均衡机制
+        // 负载均衡随机机制
         return new RandomRule();
     }
 }
