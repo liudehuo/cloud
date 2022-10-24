@@ -22,9 +22,9 @@ eureka:
     service-url:
       # 入驻地址，(避免写成default-zone)
       # 单机版
-      # defaultZone: http://localhost:7001/eureka
+      defaultZone: http://localhost:7001/eureka
       # 集群版
-      defaultZone: http://localhost:7001/eureka/,http://127.0.0.1:7002/eureka/
+      # defaultZone: http://localhost:7001/eureka/,http://127.0.0.1:7002/eureka/
   instance:
     instance-id: payment8002
     # 访问路径可以显示IP地址
